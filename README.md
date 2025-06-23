@@ -1,3 +1,3 @@
-# SightReader
+#SightReader
 
-Future project to help practice sight reading...
+app to help with sightreading using midi output from a keyboard and a laptop/ tablet?
