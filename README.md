@@ -4,7 +4,8 @@ Future project to help practice sight-reading...
 
 
 ## Todo: mvp
-- display live midi input in streamlit
+- ~~port detection and selection in frontend~~
+- display live midi input in Next
 - display note names w/ real time status (on/off)
 - visual piano roll
 == 
