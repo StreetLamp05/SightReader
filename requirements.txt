@@ -1,4 +1,0 @@
-streamlit
-mido
-python-rtmidi
-pretty_midi

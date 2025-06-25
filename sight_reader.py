@@ -2,7 +2,7 @@ import mido
 import time
 import threading
 import pretty_midi
-import streamlit as st
+
 
 # List all MIDI input ports
 for name in mido.get_input_names():

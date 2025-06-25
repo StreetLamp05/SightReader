@@ -1,0 +1,13 @@
+{
+  "name": "midi-electron-app",
+  "version": "0.1.0",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "cd frontend && npx next dev",
+    "build": "cd frontend && npx next build",
+    "start": "npm run build && electron electron/main.js"
+  },
+  "devDependencies": {
+    "electron": "^29.0.0"
+  }
+}
