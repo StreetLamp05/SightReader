@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "main": "electron/main.js",
   "scripts": {
+    "server": "cd backend && uvicorn main:app --reload",
     "dev": "cd frontend && npx next dev",
     "build": "cd frontend && npx next build",
     "start": "npm run build && electron electron/main.js"
