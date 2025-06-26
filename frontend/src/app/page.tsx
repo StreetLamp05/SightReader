@@ -1,6 +1,7 @@
 "use client";
 import {useState, useEffect, useRef} from "react";
 import DropDownSelector from "@/app/components/dropdownSelector";
+import DebugConsole from "@/app/components/DebugConsole";
 
 export default function Home() {
     const [status, setStatus] = useState("Connecting...");
@@ -81,6 +82,7 @@ export default function Home() {
             <button onClick={toggle}>
                 {listening ? "Stop Listening" : "Start Listening"}
             </button>
+            <DebugConsole socket={socketRef.current} maxHistory={50} />
         </main>
     ); // return
 
