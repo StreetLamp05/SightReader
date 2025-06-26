@@ -14,8 +14,19 @@ def get_midi_input(port_name: str):
                 else:
                     print(f"Note OFF: {note_name}")
 
-def start_listener():
-    pass
+def start_listener(port_name, websocket=None):
+    port = mido.open_input(port_name)
+    while True:
+        msg = port.receive()
+        print(f"MIDI: {msg}")
+
+        if websocket:
+            import asyncio
+            try:
+                asyncio.run(websocket.send_text(str(msg)))
+            except Exception as e:
+                print("WebSocket send failed:", e)
+
 
 def list_midi_ports() -> list[Any] | None:
     ports = []
