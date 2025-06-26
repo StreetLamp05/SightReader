@@ -45,15 +45,9 @@ async def websocket_endpoint(websocket: WebSocket):
 
             elif message["type"] == "select_port":
                 port = message["payload"]["port"]
-                print("select port: " , port)
-                #
-                # port_index = message["payload"]["port_index"]
-                # ports = list_midi_ports()
-                # if port_index < 0 or port_index >= len(ports):
-                #     await websocket.send_text(json.dumps({"type": "error", "message": "Invalid port"}))
-                # else:
-                #     state["port"] = ports[port_index]
-                #     await websocket.send_text(json.dumps({"type": "port_selected", "port": state["port"]}))
+                state["port"] = port
+                await websocket.send_text(json.dumps({"type": "port_selected", "port": state["port"]}))
+
 
             elif message["type"] == "toggle_listening":
                 if not state["listening"]:
