@@ -1,6 +1,6 @@
 # SightReader
 
-Future project to help practice sight-reading...
+Project to help practice sight-reading...
 
 
 ## Todo: mvp
