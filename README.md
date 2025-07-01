@@ -1,6 +1,38 @@
 # SightReader
+## About
+A cross-platform desktop application helping users practice piano sight-reading w/ real-time feedback. Built with Electrion, Next.js, and FastAPI. It interfaces with MIDI keyboards to visualize and evaluate input/ performance.
 
-Project to help practice sight-reading...
+## Features
+88-key interactive piano roll that highlights notes in real time as they are played
+
+Live MIDI input detection and port selection from supported devices
+
+Modular practice modes including:
+
+Single-note recognition with instant correctness feedback
+
+Short sight-reading passages with timing and accuracy analysis
+
+Sheet-style song rendering with mistake highlighting
+
+## Tech
+Frontend: Next.js, Tailwind CSS, React
+
+Backend: FastAPI, Python MIDI libraries
+
+Desktop Integration: Electron
+
+Communication: WebSockets for real-time MIDI data
+
+## Future Goals
+Track user performance over time
+
+Add configurable difficulty levels
+
+Export session logs or performance summaries
+
+Create a mobile application for use with iPads/ tablets... 
+..
 
 
 ## Todo: mvp
